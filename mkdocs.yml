@@ -1,0 +1,100 @@
+site_name: ProteoformTracker Docs
+site_description: >-
+  User guide for ProteoformTracker, a detectability-planning tool for
+  isoform/proteoform-level top-down and middle-down proteomics.
+site_url: https://HuangLabAtUAB.github.io/proteoformtracker-docs/
+repo_url: https://github.com/HuangLabAtUAB/ProteoformTracker
+repo_name: HuangLabAtUAB/ProteoformTracker
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+    - content.action.edit
+    - search.suggest
+    - search.highlight
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+  - Getting started:
+      - Installation & setup: getting-started/installation.md
+      - Quick start (5-minute tour): getting-started/quick-start.md
+  - Concepts:
+      - What ProteoformTracker answers: concepts/overview.md
+      - Resolving power & FWHM: concepts/resolving-power.md
+      - Charge-state envelopes: concepts/charge-envelope.md
+      - Fragmentation propensity & scoring modes: concepts/fragmentation-propensity.md
+      - Relevant vs. confounding proteins: concepts/relevant-vs-confounding.md
+      - Tier colors (unique / partial / common): concepts/tiers.md
+  - Global settings:
+      - MS strategy (top-down / middle-down): settings/ms-strategy.md
+      - MS resolution parameters: settings/ms-resolution.md
+  - Input methods:
+      - "Option 1: Gene → isoform → proteoform": input-methods/option-1-gene.md
+      - "PTM specification syntax": input-methods/ptm-syntax.md
+      - "Option 2: FASTA sequence": input-methods/option-2-fasta.md
+      - "Option 3: rMATS splicing events": input-methods/option-3-rmats.md
+  - Middle-down mode:
+      - Peptide candidate picker: middle-down/peptide-picker.md
+  - Reading the results:
+      - "Section 1: Relevant-proteoform comparison": results/section-1-relevant.md
+      - "Section 2: Confounding-protein search": results/section-2-confounders.md
+      - Interacting with the charts: results/chart-interactions.md
+  - Reference:
+      - Supported PTMs (Unimod): reference/supported-ptms.md
+      - FAQ & troubleshooting: reference/faq.md
+      - Glossary: reference/glossary.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/HuangLabAtUAB/ProteoformTracker
