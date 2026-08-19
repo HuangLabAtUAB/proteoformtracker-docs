@@ -69,7 +69,7 @@ nav:
       - Installation & setup: getting-started/installation.md
       - Quick start (5-minute tour): getting-started/quick-start.md
   - Concepts:
-      - What ProteoformTracker answers: concepts/overview.md
+      - Rationale and technical details of ProteoformTracker's design: concepts/overview.md
       - Resolving power & FWHM: concepts/resolving-power.md
       - Charge-state envelopes: concepts/charge-envelope.md
       - Fragmentation propensity & scoring modes: concepts/fragmentation-propensity.md
