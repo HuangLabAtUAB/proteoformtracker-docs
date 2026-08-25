@@ -54,13 +54,13 @@ hover-popover sequence before trusting a spec across isoforms.
 
 ## Worked example
 
-For CD44 transcript `ENST00000904013`, residue 109 is genuinely Serine. Typing:
+For BCL2L1 transcript `ENST00000941693`, residue 14 is genuinely Serine. Typing:
 
 ```
-109_S_Phospho
+14_S_Phospho
 ```
 
-produces an additional proteoform row `ENST00000904013 + Phospho@109`, its mass exactly Unimod's
+produces an additional proteoform row `ENST00000941693 + Phospho@14`, its mass exactly Unimod's
 phospho delta (+79.966331 Da monoisotopic) above the unmodified form:
 
 ![Proteoform table showing the PTM row](../assets/screenshots/04-proteoform-table-run.png)

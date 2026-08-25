@@ -8,7 +8,7 @@ include, and optionally add PTMs.
 Type a HGNC gene symbol and click **Load isoforms**:
 
 ```
-CD44
+BCL2L1
 ```
 
 This looks the gene up in the precomputed genome-wide exon index, then fetches each transcript's

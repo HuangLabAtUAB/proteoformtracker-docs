@@ -1,6 +1,6 @@
 # Quick start: a 5-minute tour
 
-This walks through a complete, real example — comparing two **CD44** isoforms in top-down mode,
+This walks through a complete, real example — comparing two **BCL2L1** isoforms in top-down mode,
 adding a phosphorylation, and searching for confounding proteins — using nothing but the app's
 own built-in Ensembl lookup. No files to prepare.
 
@@ -24,21 +24,21 @@ Under **Input selection**, Option 1 ("Gene → isoform → proteoform") is selec
 gene symbol and click **Load isoforms**:
 
 ```
-CD44
+BCL2L1
 ```
 
 This fetches every protein-coding transcript for the gene from the precomputed exon index, plus a
-real translated sequence for each from Ensembl (cached to disk after the first fetch). CD44 has 39
-distinct protein sequences across its transcripts.
+real translated sequence for each from Ensembl (cached to disk after the first fetch). BCL2L1's 40
+transcripts collapse to 9 distinct protein sequences.
 
 ## 3. Check two isoforms and add a PTM
 
 Open the **Isoform catalog** (collapsed by default after the first load) and check two rows —
-say the two longest, `ENST00000904013` (743 aa) and `ENST00000904018` (700 aa). Each row has its
+say `ENST00000941693` (251 aa) and `ENST00000925014` (250 aa). Each row has its
 own PTM spec box; type a modification directly:
 
 ```
-109_S_Phospho
+14_S_Phospho
 ```
 
 ![Isoform catalog with a PTM spec entered](../assets/screenshots/03-isoform-catalog-ptm.png)
@@ -57,8 +57,8 @@ combination, each with its own computed mass. Pick one as the confounder-search 
 
 ![Proteoform table, confounder target, and Run analysis](../assets/screenshots/04-proteoform-table-run.png)
 
-Notice the PTM row: `ENST00000904013 + Phospho@109` at 81638.43 Da, +79.96 Da over the unmodified
-81558.47 Da — exactly Unimod's phospho mass delta.
+Notice the PTM row: `ENST00000941693 + Phospho@14` at 28166.60 Da, +79.97 Da over the unmodified
+28086.63 Da — exactly Unimod's phospho mass delta.
 
 Analysis runs in two visible stages (watch the progress toast): first the MS1/MS2 comparison for
 everything checked, then a *search* for confounding proteins (cheap — no isotope computation yet).
