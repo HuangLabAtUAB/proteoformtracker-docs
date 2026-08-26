@@ -39,7 +39,7 @@ Each row has, top to bottom:
 
 ## Fragment filter
 
-Buttons above the ladder (All fragments / Elevated / High / Very high) restrict which bonds are
+Buttons above the ladder (All fragments / Elevated / High) restrict which bonds are
 drawn, using whichever [scoring mode](../concepts/fragmentation-propensity.md) is active. The
 per-row badge counts and the "N of M bonds shown" readout both update live when you change this.
 

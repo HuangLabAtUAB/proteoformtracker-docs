@@ -58,7 +58,7 @@ opposite case from the MS1 example above: two proteoforms' y24 ions coincide exa
 
 ## Fragment filter
 
-Above every MS2 ladder, four buttons (All fragments / Elevated / High / Very high) restrict which
+Above every MS2 ladder, three buttons (All fragments / Elevated / High) restrict which
 bonds are drawn to those clearing a given [propensity tier](../concepts/fragmentation-propensity.md).
 Two things update live when you change this:
 

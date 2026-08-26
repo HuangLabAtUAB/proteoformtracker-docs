@@ -28,7 +28,7 @@ line reports the true total found. There's currently no way to raise the cap fro
 ## The MS2 ladder shows nothing for a bond I clicked
 
 The fragment-isotope inspector only computes for bonds whose propensity score clears the current
-scoring mode's isotope gate (Calibrated: score > 1; RF: score > 0.08). If you click a bond below
+scoring mode's isotope gate (Calibrated: score > 0.10; RF: score > 0.08). If you click a bond below
 that gate, the label explains this rather than showing an empty chart — try the **Elevated** filter
 level to only click bonds that will actually qualify.
 

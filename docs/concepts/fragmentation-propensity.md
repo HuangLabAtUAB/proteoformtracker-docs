@@ -27,15 +27,14 @@ the same numeric scale** and must never be compared directly against each other'
 
 ### Calibrated (length-aware) — the default
 
-The primary, auditable formula: real fold-enrichment thresholds fit against matched b/y ions from
-two independent public top-down datasets, including the length multiplier. Tiers and their
-fold-enrichment over baseline:
+The primary, auditable formula: a genuine 0-1 probability, with real fold-enrichment thresholds fit
+against matched b/y ions from two independent public top-down datasets, including the length
+multiplier. Tiers and their fold-enrichment over baseline:
 
 | Tier | Score threshold | Fold enrichment |
 |---|---|---|
-| Elevated | > 1.5 | ~3× |
-| High | ≥ 4 | ~4.5× |
-| Very high | ≥ 10 | ~5.9× |
+| Elevated | > 0.10 | ~3.1× |
+| High | ≥ 0.20 | ~4.7× |
 
 The tradeoff: because length is baked in as a suppressive multiplier, a single very long
 proteoform can have **every** bond fall below even the "Elevated" threshold, even though some
@@ -52,11 +51,10 @@ Calibrated mode's. Its own tier thresholds:
 |---|---|---|
 | Elevated | > 0.08 | ~2.5× |
 | High | ≥ 0.15 | ~3.5× |
-| Very high | ≥ 0.30 | ~6.5× |
 
 Switching modes re-tiers every bond and re-colors the whole ladder; it also changes which bonds
 qualify for on-demand isotope-pattern inspection (RF mode's qualifying gate is score > 0.08 vs.
-Calibrated mode's score > 1).
+Calibrated mode's score > 0.10).
 
 ## Reading the ladder
 
