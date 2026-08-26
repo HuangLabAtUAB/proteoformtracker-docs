@@ -27,6 +27,11 @@ to the nearest **meaningful** peak (≥1% relative intensity) from a different p
 chart — expressed in multiples of the instrument's own resolving-power FWHM at that m/z. See
 [Resolving power & FWHM](../concepts/resolving-power.md) for what the ratio means.
 
+![MS1 charge-envelope peaks, zoomed into a single charge-state cluster](../assets/screenshots/14-ms1-isotope-zoom.png)
+
+A clearly resolved case: two proteoforms' peaks here sit 103.3× the instrument's resolving width
+apart, so the hover tooltip reports them as cleanly separable rather than at risk of overlapping.
+
 ### MS2 ladder
 
 Hover a b/y tick (same zoom-in requirement) to see that bond's fragment mass, its
@@ -43,6 +48,13 @@ is deliberately click-to-compute rather than always-on — see
 A fragment only "qualifies" for this inspector if its propensity score clears the current
 [scoring mode](../concepts/fragmentation-propensity.md)'s isotope-computation gate — if you click a
 bond with no qualifying proteoform, the label explains why instead of showing an empty chart.
+
+![One fragment ion's own predicted isotope pattern, zoomed](../assets/screenshots/15-ms2-fragment-isotope-zoom.png)
+
+The same resolved-vs-overlapping question the MS1 chart answers for the intact protein, answered
+here for one fragment ion at a time — the same resolving-power model underlies both. This is the
+opposite case from the MS1 example above: two proteoforms' y24 ions coincide exactly (Δm/z =
+0.000) and are reported as effectively the same detected peak.
 
 ## Fragment filter
 
