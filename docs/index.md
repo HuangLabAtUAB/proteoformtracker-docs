@@ -41,5 +41,3 @@ ProteoformTracker is a companion project to
 ## Source
 
 - App repository: [github.com/HuangLabAtUAB/ProteoformTracker](https://github.com/HuangLabAtUAB/ProteoformTracker)
-- Design spec (`ptracker.md` in the app repo) has the full scoring-model rationale and known
-  limitations, if you want more depth than this guide covers.
