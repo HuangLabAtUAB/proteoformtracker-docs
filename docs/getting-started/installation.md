@@ -1,5 +1,10 @@
 # Installation & setup
 
+**Most users don't need this page.** The recommended way to use ProteoformTracker is the deployed
+app at [proteoformtracker.org](https://www.proteoformtracker.org) — no installation required. Only
+follow the steps below if that URL is temporarily unavailable, or if you want to modify the code
+yourself.
+
 ProteoformTracker is an R Shiny app. It needs R, a project-local Python virtualenv (wrapped via
 `reticulate` for mass calculation), and several precomputed reference-data files that are too large
 to ship in the git repo.

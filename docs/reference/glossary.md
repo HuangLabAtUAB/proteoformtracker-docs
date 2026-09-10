@@ -75,9 +75,9 @@ scores are all suppressed by their own length. Not comparable in magnitude to Ca
 : A widely-used tool for detecting differential alternative-splicing events (SE, MXE, A3SS, A5SS,
 RI) from RNA-seq data. See [Option 3](../input-methods/option-3-rmats.md).
 
-**SE / MXE**
-: rMATS event types supported by Option 3 — Skipped-Exon and Mutually-eXclusive-Exons,
-respectively.
+**SE / MXE / RI / A5SS / A3SS**
+: The five rMATS event types supported by Option 3 — Skipped-Exon, Mutually-eXclusive-Exons,
+Retained-Intron, Alternative 5′ Splice Site, and Alternative 3′ Splice Site, respectively.
 
 **IsoPepTracker**
 : ProteoformTracker's bottom-up companion project, at

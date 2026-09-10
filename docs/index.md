@@ -32,7 +32,12 @@ ProteoformTracker is a companion project to
 
 ## Where to start
 
-- New here? Start with [Installation & setup](getting-started/installation.md), then the
+**Recommended: use the deployed app at [proteoformtracker.org](https://www.proteoformtracker.org)**
+— no installation needed, and it's kept up to date with the latest release. Local setup
+([Installation & setup](getting-started/installation.md)) is only needed if that URL is temporarily
+unavailable, or if you want to modify the code yourself.
+
+- New here? Open the [deployed app](https://www.proteoformtracker.org), then follow the
   [5-minute quick start](getting-started/quick-start.md).
 - Want the concepts first? See [Rationale and technical details of ProteoformTracker's design](concepts/overview.md).
 - Already running the app? Jump straight to whichever [input method](input-methods/option-1-gene.md)

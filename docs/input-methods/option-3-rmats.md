@@ -14,6 +14,9 @@ precomputed exon index [Option 1](option-1-gene.md) uses) structurally match eac
 
 - **SE (skipped-exon)**: exon-inclusion vs. exon-skipping arms
 - **MXE (mutually-exclusive-exons)**: 1st-exon vs. 2nd-exon arms
+- **RI (retained-intron)**: intron-retained vs. spliced-out arms
+- **A5SS (alternative 5′ splice site)**: long vs. short 5′ splice-site arms
+- **A3SS (alternative 3′ splice site)**: long vs. short 3′ splice-site arms
 
 This gets you real, full-length proteoforms rather than just the local differential region. If no
 annotated transcript matches a given arm (some events reflect a splicing pattern no single
@@ -21,7 +24,7 @@ annotated transcript uses), that arm simply shows no candidates — constructing
 transcript for that case isn't implemented yet.
 
 !!! note "Supported event types"
-    Only **SE** and **MXE** are supported so far. A3SS/A5SS/RI are a planned follow-up.
+    All five rMATS event types — **SE, MXE, RI, A5SS, and A3SS** — are supported.
 
 ## Coordinate conventions worth knowing
 
@@ -33,11 +36,18 @@ you're cross-checking against the raw rMATS file yourself.
 
 ## Workflow
 
-1. Pick the **event type** (SE or MXE) matching your results file.
-2. Upload the rMATS SE/MXE results file (`.txt`/`.JC.txt`).
+1. Pick the **event type** (SE, MXE, RI, A5SS, or A3SS) matching your results file.
+2. Upload the rMATS results file (`.txt`/`.JC.txt`) for that event type.
 3. Pick which **event** (row) to analyze from the dropdown.
 4. Click **Find matching transcripts**.
 5. Review the matched transcripts for each arm, plus the exon-alignment preview showing where the
    differential exon(s) sit relative to the matched transcripts.
 6. Click **Add to comparison** to send the matched proteoforms into the same shared results view
    [Option 1](option-1-gene.md) and [Option 2](option-2-fasta.md) use.
+
+## Try it with real example files
+
+Real rMATS output files for all five event types are in the app repository's
+[`tests/rmats_test/`](https://github.com/HuangLabAtUAB/ProteoformTracker/tree/main/tests/rmats_test)
+folder — download one and upload it here to try the workflow immediately, without needing your own
+rMATS run first.

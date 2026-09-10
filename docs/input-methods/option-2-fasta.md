@@ -41,3 +41,10 @@ converges on it before any scoring code runs.
 
 Either paste FASTA text directly or upload a `.fa`/`.fasta`/`.fas`/`.txt` file — both feed the same
 two-step pipeline.
+
+## Try it with a real example file
+
+Two example novel-transcript FASTA files are in the app repository's
+[`tests/novel_isoform_test/`](https://github.com/HuangLabAtUAB/ProteoformTracker/tree/main/tests/novel_isoform_test)
+folder — download one and paste/upload it here to try the workflow immediately, without needing
+your own assembled transcript first.
